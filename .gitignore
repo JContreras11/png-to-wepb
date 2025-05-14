@@ -9,4 +9,4 @@ package-lock.json
 # Carpetas de imágenes
 input/*
 output/*
-.DS_Store
+.DS_Store 
