@@ -6,7 +6,7 @@ const readline = require('node:readline');
 // Configura las rutas de origen y destino
 const inputFolder = './input'; // Carpeta con las imágenes originales
 const outputFolder = './output'; // Carpeta para las imágenes convertidas
-
+ 
 // Crea la carpeta de destino si no existe
 if (!fs.existsSync(outputFolder)) {
     fs.mkdirSync(outputFolder, { recursive: true });
