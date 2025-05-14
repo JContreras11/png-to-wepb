@@ -31,7 +31,7 @@ const processImages = async () => {
         const outputPath = path.join(outputFolder, `${path.parse(file).name}.webp`);
 
         // Verifica si el archivo es una imagen válida
-        if (fs.lstatSync(inputPath).isFile() && /\.(jpg|jpeg|png|gif|tiff)$/i.test(file)) {
+        if (fs.lstatSync(inputPath).isFile() && /\.(jpg|jpeg|png|gif|tiff|webp)$/i.test(file)) {
             await convertToWebp(inputPath, outputPath);
         } else {
             console.log(`Omitido (no es imagen): ${inputPath}`);
